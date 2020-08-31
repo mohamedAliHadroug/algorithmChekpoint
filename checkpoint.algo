@@ -1,0 +1,23 @@
+ALGORITHM checkpoint
+VAR sentence : STRING;
+VAR numChar, numWord, numVowel: INTEGER;
+BEGIN
+     Read(sentence);
+     numChar := sentence.length;
+     Write("Total number of character :",numChar);
+     numword : = 0;
+     FOR i FROM 0 TO  numChar step 1  DO
+     IF (sentence[i] = ' ') THEN
+         numWord := numWord+1;
+     END_IF
+     END_FOR
+    Write("Total number of world :",numWord);
+    numVowel :=0;
+    FOR i FROM 0 TO  numChar step 1 DO
+    IF (sentence[i] ='a' or sentence[i] ='e' or sentence[i] ='i' or sentence[i] ='o' or sentence[i] ='u' or
+        sentence[i] ='A' or sentence[i] ='E' or sentence[i] ='I' or sentence[i] ='O' or sentence[i] ='U' ) THEN
+       numVowel := numVowel+1;
+    END_IF
+    END_FOR
+   Write("total number of vowel ;",numVowel);
+END
